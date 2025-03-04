@@ -1,0 +1,101 @@
+body {
+  background-color: white;  /* 恢復為白色背景 */
+  color: black;  /* 恢復為黑色文字 */
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;  /* 更適合閱讀的字體大小 */
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-spacing: 0;
+}
+
+td, th {
+  vertical-align: top;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #643896;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.papertitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+strong {
+  font-size: 16px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade {
+  transition: opacity 0.2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* 增加卡片風格的設計 */
+.card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 增加表格行間距和邊框 */
+.table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
