@@ -1,17 +1,19 @@
 body {
-  background-color: white;  /* 恢復為白色背景 */
-  color: black;  /* 恢復為黑色文字 */
+  background: radial-gradient(circle at top, #2a2a2a 0%, #111 45%, #050505 100%);
+  color: #f5f5f5;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;  /* 更適合閱讀的字體大小 */
+  font-size: 16px;
+  line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
+  scroll-behavior: smooth;
 }
 
 table {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0 auto 25px auto;
+  padding: 0;
   border-spacing: 0;
 }
 
@@ -20,70 +22,148 @@ td, th {
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
 }
 
 a {
-  color: #643896;
+  color: #7fc9ff;
   text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: underline;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(127, 201, 255, 0.7);
 }
 
 .name {
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 20px;
-  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 10px;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
 .papertitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
+  color: #f0f0f0;
 }
 
 strong {
   font-size: 16px;
+  color: #e6e6e6;
 }
 
 .one {
   width: 160px;
   height: 160px;
   position: relative;
+  filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.45));
 }
 
 .two {
   width: 160px;
   height: 160px;
   position: absolute;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 
-.fade {
-  transition: opacity 0.2s ease-in-out;
+.two video {
+  border-radius: 16px;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.hoverZoomLink {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 增加卡片風格的設計 */
-.card {
-  background-color: #f8f8f8;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.hoverZoomLink:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.55);
 }
 
-/* 增加表格行間距和邊框 */
+.section-card {
+  background: linear-gradient(135deg, rgba(28, 28, 28, 0.85), rgba(10, 10, 10, 0.92));
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.45);
+  transform: translateY(30px);
+  opacity: 0;
+  animation: floatUp 0.7s ease forwards;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.section-card:nth-of-type(2n) {
+  animation-delay: 0.12s;
+}
+
+.section-card:nth-of-type(3n) {
+  animation-delay: 0.24s;
+}
+
+.section-card:hover {
+  border-color: rgba(127, 201, 255, 0.25);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.55);
+  transform: translateY(-6px);
+}
+
+.hero-section {
+  display: block;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: -40% -60%;
+  background: radial-gradient(circle, rgba(127, 201, 255, 0.12), transparent 55%);
+  transform: rotate(5deg);
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+.hero-section td {
+  position: relative;
+  z-index: 1;
+}
+
+.row-alt {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.news-panel {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.news-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.news-panel::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(127, 201, 255, 0.6), rgba(80, 80, 80, 0.6));
+  border-radius: 10px;
+}
+
+.news-panel table {
+  border: none;
+  margin: 0;
+}
+
 .table {
   width: 100%;
   margin: 20px 0;
@@ -92,23 +172,51 @@ span.highlight {
 
 .table th, .table td {
   padding: 12px 20px;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #e0e0e0;
 }
 
 .table th {
-  background-color: #f2f2f2;
-  font-weight: bold;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
 }
 
 ul {
-  margin: 10px 0;
+  margin: 12px 0;
   padding-left: 20px;
 }
 
 ul li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  color: #d7d7d7;
 }
 
 ul li:last-child {
   margin-bottom: 0;
+}
+
+video, img {
+  border-radius: 16px;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1) rotate(10deg);
+    opacity: 0.65;
+  }
+  50% {
+    transform: scale(1.15) rotate(0deg);
+    opacity: 0.9;
+  }
 }
