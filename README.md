@@ -1,7 +1,7 @@
 # Personal Site – Yu-Han Lee 🚀
 
-👋 歡迎來到我的求職網站原始碼！  
-🌐 也歡迎直接造訪我的網站看看最新動態與作品：https://lee0721.github.io
+👋 Welcome to the source for my job-hunting website.  
+🌐 Check out the live site for the latest updates and projects: https://lee0721.github.io
 
 ## Tech Stack
 
