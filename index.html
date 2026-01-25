@@ -7,6 +7,9 @@
 
     <meta name="author" content="Yu-Han Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -18,151 +21,129 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <!-- 照片放在左側 -->
-          <table class="section-card hero-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-                <tr style="padding:0px">
-                    <td style="padding:2.5%;width:40%;max-width:40%;vertical-align:middle;text-align:center">
-                        <a href="images/me.png">
-                            <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/me.png" class="hoverZoomLink">
-                        </a>
-                    </td>
-                    <!-- 文字部分放在右側 -->
-                    <td style="padding:2.5%;width:60%;vertical-align:middle;text-align:left;">
-                        <p class="name" style="margin:0; font-size: 32px; font-weight: bold; text-align: left;">
-                            Yu-Han Lee
-                        </p>
-                        <p style="font-size: 16px;">
-                          MSc Advanced Computing student at <a href="https://www.kcl.ac.uk/">King's College London</a> specialising in AI infrastructure, machine learning, and scalable computer vision systems. Previously served as a Software Engineer Intern at <a href="https://english.taiwanmobile.com/index.html">Taiwan Mobile</a>, building media-rich customer experiences and intelligent tooling.
-                        </p>
-                        <p style="font-size: 16px;">
-                          I build modular deep learning pipelines and full-stack analytics prototypes that bridge research and production—spanning automated basketball video analysis, one-shot learning for classroom roll call, and cloud-native ML products.
-                        </p>
-                        <p style="font-size: 16px;">
-                          Interests: multimodal perception, scalable ML infra, trustworthy AI, and human-in-the-loop tooling powered by Python, C++, PyTorch, TensorFlow, FastAPI, and modern data stacks.
-                        </p>
-                        <p style="text-align:left;font-size:16px;">
-                            <a href="mailto:yuhanlee0721@gmail.com">Email</a> &nbsp;/&nbsp;
-                            <a href="https://www.linkedin.com/in/ty1er1ee/">LinkedIn</a> &nbsp;/&nbsp;
-                            <a href="https://github.com/lee0721/">Github</a> &nbsp;/&nbsp;
-                            <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
-                            <a href="tel:+447570999892">Phone</a>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-          </table>
-          <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>News</h2>
-                  <div class="news-panel">
-                    <table class="table table-sm table-borderless">
-                      <tbody>
-                        <tr>
-                          <th scope="row" style="width: 120px;">Oct, 2025</th>
-                          <td>Shipped the Payment Transaction Simulator with FastAPI, SQLite, Docker, and fraud heuristics, plus released a demo walkthrough for recruiters.</td>
-                        </tr>
+    <div class="page">
 
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
+      <nav class="navbar">
+        <div class="brand">
+          <div class="brand-mark">YL</div>
+          <div class="brand-text">
+            <span class="brand-name">Yu-Han Lee</span>
+            <span class="brand-role">AI Infra · CV</span>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="data/CV.pdf">CV</a>
+          <a class="btn btn-primary" href="mailto:yuhanlee0721@gmail.com">Contact</a>
+        </div>
+      </nav>
 
-                        <tr>
-                          <th scope="row">Sep, 2025</th>
-                          <td>Earned Oracle Cloud Infrastructure certifications across Data Science, Generative AI, AI Vector Search, and AI Foundations, as well as NVIDIA Jetson Nano AI training.</td>
-                        </tr>
+      <section class="hero" id="home">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">MSc Advanced Computing · King's College London</p>
+            <h1>Yu-Han Lee</h1>
+            <p class="hero-lede">MSc student specialising in AI infrastructure, machine learning, and scalable computer vision systems. Previously a Software Engineer Intern at Taiwan Mobile, building media-rich customer experiences and intelligent tooling.</p>
+            <p class="hero-lede">I build modular deep learning pipelines and full-stack analytics prototypes that bridge research and production—spanning automated basketball video analysis, one-shot learning for classroom roll call, and cloud-native ML products.</p>
+            <div class="chip-row">
+              <span class="chip">AI infrastructure</span>
+              <span class="chip">Computer Vision</span>
+              <span class="chip">Cloud ML</span>
+              <span class="chip">MLOps</span>
+              <span class="chip">Prototyping</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:yuhanlee0721@gmail.com">Email me</a>
+              <a class="btn btn-ghost" href="data/CV.pdf">Download CV</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/ty1er1ee/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="btn btn-tertiary" href="https://github.com/lee0721/" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="hero-meta">
+              <span>Based in London · Open to relocation</span>
+              <span><a href="tel:+447570999892">+44 7570 999892</a></span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <img src="images/me.png" alt="Yu-Han Lee portrait" class="hero-photo">
+              <div class="glow-ring"></div>
+            </div>
+            <div class="floating-badge">Human-in-the-loop ML</div>
+            <div class="floating-badge alt">Scalable CV</div>
+          </div>
+        </div>
+      </section>
 
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
+      <section class="section-grid top-cards">
+        <div class="section-card updates-card" id="updates">
+          <div class="section-card__header">
+            <h2>Latest Updates</h2>
+            <span class="pill pill-ghost">2025–2024</span>
+          </div>
+          <ul class="updates-list">
+            <li>
+              <span class="date">Oct 2025</span>
+              <p>Shipped a Payment Transaction Simulator (FastAPI · SQLite · Docker) with fraud heuristics and a demo walkthrough for recruiters.</p>
+            </li>
+            <li>
+              <span class="date">Sep 2025</span>
+              <p>Earned Oracle Cloud certifications across Data Science, Generative AI, AI Vector Search, and AI Foundations; completed NVIDIA Jetson Nano AI training.</p>
+            </li>
+            <li>
+              <span class="date">Jul 2025</span>
+              <p>Finished MSc thesis on automated basketball video analysis combining YOLOv8, ByteTrack, R(2+1)D, CLIP, and homography tactics.</p>
+            </li>
+          </ul>
+          <div class="muted-note">More details live in Experience and Projects.</div>
+        </div>
 
-                        <tr>
-                          <th scope="row">Jul, 2025</th>
-                          <td>Completed my MSc thesis project on automated basketball video analysis integrating YOLOv8, ByteTrack, R(2+1)D, CLIP, and homography-based tactical insight generation.</td>
-                        </tr>
+        <div class="section-card about-card" id="about">
+          <div class="section-card__header">
+            <h2>About</h2>
+            <span class="pill">AI & CV</span>
+          </div>
+          <p class="about-blurb">
+            MSc Advanced Computing @ King’s College London. I build modular deep learning pipelines and full-stack analytics prototypes that bridge research and production.
+          </p>
+          <div class="about-grid">
+            <div>
+              <h4>Focus</h4>
+              <ul>
+                <li>AI infrastructure & MLOps</li>
+                <li>Scalable computer vision</li>
+                <li>Human-in-the-loop tooling</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Tooling</h4>
+              <ul>
+                <li>Python · C++ · PyTorch · TensorFlow</li>
+                <li>FastAPI · Docker · Cloudflare Workers</li>
+                <li>SQLite/PostgreSQL · MLflow · Prefect</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a class="btn btn-primary" href="data/CV.pdf">Download CV</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/ty1er1ee/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-tertiary" href="mailto:yuhanlee0721@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
 
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Sep, 2024</th>
-                          <td>Started the MSc Advanced Computing programme at King's College London.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Feb, 2024</th>
-                          <td>Wrapped my NSTC-funded Undergraduate Research Assistantship at Chung Yuan Christian University, advancing one-shot learning for classroom roll call.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Feb, 2024</th>
-                          <td>Completed my Library IT internship where I automated thesis checking and BibTeX-to-CSV workflows for over 500 students and staff.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Dec, 2023</th>
-                          <td>Paper accepted to the Technologies and Applications of Artificial Intelligence (TAAI) conference, domestic track. (Paper ID: TAAI2023-Domestic-53)</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Sep, 2023</th>
-                          <td>Delivered my BSc graduation project on one-shot learning for classroom roll call, combining augmentation, transfer learning, and triplet networks.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Aug, 2023</th>
-                          <td>Served as a Software Engineer Intern at <a href="https://english.taiwanmobile.com/index.html">Taiwan Mobile</a>, building image conversion tooling, HTML5 media capture prototypes, and YOLOv8 logo detection workflows.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Jul, 2023</th>
-                          <td>Built Our-Scheme, a custom C++ interpreter that tokenises, parses, and evaluates Scheme-style expressions.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Jun, 2023</th>
-                          <td>Secured the NSTC Undergraduate Research Grant with an acceptance rate below 5%.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Jul, 2022</th>
-                          <td>Designed and simulated a five-stage pipelined MIPS-Lite CPU in Verilog with comprehensive waveform validation.</td>
-                        </tr>
-
-                        <tr><td colspan="2" style="padding: 10px 0;"></td></tr>
-
-                        <tr>
-                          <th scope="row">Jan, 2022</th>
-                          <td>Developed a two-pass SIC/SICXE assembler in C++ that translates source code into validated object code.</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+      <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
           <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Experience</h2>
+                <h2 id="experience">Experience</h2>
               </td>
             </tr>
           </tbody></table>
@@ -351,7 +332,7 @@
     <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
       <td style="padding:20px;width:100%;vertical-align:middle">
-        <h2>Projects</h2>
+                <h2 id="projects">Projects</h2>
       </td>
     </tr>
   </tbody></table>
@@ -524,9 +505,24 @@
               </td>
             </tr>
           </tbody></table>
+
+          <table class="section-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2 id="contact">Get in Touch</h2>
+                <p style="color:#c9c9c9;">Let’s talk about AI infra, CV systems, or collaborations.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
+                  <a class="btn btn-primary" href="mailto:yuhanlee0721@gmail.com">Email</a>
+                  <a class="btn btn-secondary" href="https://www.linkedin.com/in/ty1er1ee/" target="_blank" rel="noreferrer">LinkedIn</a>
+                  <a class="btn btn-tertiary" href="tel:+447570999892">Call</a>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
         </td>
       </tr>
     </tbody>
     </table>
+    </div>
   </body>
 </html>
