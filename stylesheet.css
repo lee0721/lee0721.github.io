@@ -99,6 +99,10 @@ body {
   font-weight: 600;
   padding: 8px 10px;
   border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
